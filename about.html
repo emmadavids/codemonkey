@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+
+  <title>Emma's website</title>
+  <link rel="stylesheet" href="/user.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  
+  <header>  
+<h1 class="name">Emma's website</h1>
+		<div class="main-nav" id="myTopnav">
+		  <a href="index.html">Home</a>
+			<a href="about.html">About Emma</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+			     </div>
+  </header>
+
+
+  <div class="row">
+    <div class="column"><h2>About Emma</h2>
+      Emma is a 33 year old mental health nurse who lives in Bristol, UK, with her partner and four house-plants. She initially started learning to code to keep herself busy during a global pandemic lockdown after watching several videos on web development on the Treehouse website. She got bored of Treehouse and instead started to work her way through Harvard's free online CS50 courses, taking the opportunity to get to know javascript and python.
+<br><br>
+      Emma’s current CSS strategy is inputting random values into the text editor until the webpage behaves in an orderly fashion. She has enjoyed writing this page about herself in third person because it makes her sound fancy, like she has a biographer, or something. Emma also enjoys entering ridiculous endurance events, climbing and eating large amounts of food. If for some reason you wish to get in touch, please see the <a href="contact.html">contact page</a>. <br><br>Github is <a href="https://github.com/emmadavids/">here.</a></div><br><br>
+
+    <div class="column emmapic"><img src="emma.jpg" height=70% width=67%></div>
+
+   
+   
+      </div>
+  
+
+
+<footer class="main-footer">emma davids made this website</footer>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+    </script>
+</body>
+</html>

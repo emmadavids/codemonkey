@@ -1,0 +1,243 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: arial;
+    color: black;
+    font-size: 1.15em;
+    margin:0;
+    height: 100vh;
+    position: relative;
+    background-color: #FAD8D6;
+  }
+  
+  header {
+     width: 100%;
+     height: 45%;
+     /* padding:0; */
+     padding-bottom: -120px;
+     position:relative;
+     top: 0;
+     left: 0;
+  }
+
+  img {
+    margin-right: 30px;
+  }
+
+  h1 {
+     color: #F45B69;
+     font-size: 1.2em;
+     font-weight: bold;
+  }
+
+  h2 {
+    color: #F45B69;
+    font-size: 1.8em;
+    font-weight: bold;
+ }
+
+ h3 {
+   margin-left: 33px;
+ }
+
+ .projects {
+   margin-top: -240px;
+   margin-left: 53px;
+   margin-right: 80px;
+  
+ }
+
+ .projectpic {
+   text-align: center;
+ }
+
+ .row {
+  display: flex;
+  margin-top: -250px;
+}
+
+.rowz {
+  display: flex;
+  margin-top: -200px;
+  margin-bottom: 250px;
+  padding: 50px;
+}
+
+.emmapic {
+  padding: 80px;
+  margin-top: 59px;
+  border: 2px;
+  border: solid #000;
+border-width: 0 1px;
+}
+.col1 {
+  flex: 60%;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+col2 {
+  flex:30%;
+  padding: 20px;
+}
+
+.column {
+  flex: 50%;
+  padding:50px;
+  border: 1px;
+}
+  footer {
+  
+
+	text-align: center;
+	padding: 1em 0;
+  background: #114B5F;
+  color: white;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow:hidden;
+  clear: both;
+
+  }
+
+.main-content {
+    padding-top: -100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-contents {
+  padding-top: -250px;
+  margin-top: -200px;
+  margin-bottom: 200px;
+  padding-bottom: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-col {
+    margin-top: -75px;
+    padding-left: 20px;
+}
+.name {
+    padding-left: 1em;
+}
+
+.main-content-2 {
+  padding-top: -20em;
+  display:flex;
+  justify-content: space-evenly
+  
+}
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+  
+  
+.main-nav {
+    background-color: #F45B69;
+    overflow: hidden;
+  }
+  
+  a:link {
+    color: hotpink;
+    text-decoration: none
+  }
+  
+  /* visited link */
+  a:visited {
+    color: hotpink;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
+
+/* css heart*/
+
+  .heart {
+    --d:200px;
+    margin-left: 10px;
+    width:var(--d);
+    height:var(--d);
+    background:
+     radial-gradient(circle at 50% 83%, #114B5F 29%, transparent 30%) calc(-1 * var(--d)/5) calc(-1 * var(--d)/2)/100% 100%,
+     radial-gradient(circle at 50% 83%,#114B5F 29%, transparent 30%) calc(var(--d)/5) calc(-1 * var(--d)/2)/100% 100%,
+     linear-gradient(to bottom left,#114B5F 43%,transparent 43%) bottom left/50% 50%,
+     linear-gradient(to bottom right,#114B5F 43%,transparent 43%) bottom right/50% 50%;
+    background-repeat:no-repeat;
+    display:inline-block;
+  }
+  /* Style the links inside the navigation bar */
+  .main-nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .proj {
+     background-color: ivory;
+     margin-right: 100px;
+  }
+  /* Change the color of links on hover */
+  .main-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .main-nav a.active {
+    background-color: coral;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .main-nav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .main-nav a:not(:first-child) {display: none;}
+    .main-nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+ /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .main-nav.responsive {position: relative;}
+    .main-nav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .main-nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

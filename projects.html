@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+
+  <title>Emma's website</title>
+  <link rel="stylesheet" href="/user.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  
+  <header>  
+<h1 class="name">Emma's website</h1>
+		<div class="main-nav" id="myTopnav">
+		  <a href="index.html">Home</a>
+			<a href="about.html">About Emma</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+			     </div>
+  </header>
+
+  <div class="col1 projects">
+    <h2>Projects</h2>
+    
+Below is an assortment of projects. Most of them are CS50 projects, as I have learned the majority of my coding skills from <i>CS50 - Introduction to Computer Science</i> and <i>CS50w - Web Programming with Python and Javascript</i>. I completed all of the CS50 projects for these courses apart from the final project for the latter, but have only included my favourites here. If, for whatever reason, you wish to see them, please <a href="contact.html">get in touch.</a><br><br>
+<br> <div class="col1 proj"><h1>Network</h1><br>
+<a href="https://still-falls-17393.herokuapp.com/"> <img src="socialnetwork.png" height=50% width=50%></a><br>
+ <br><a href="https://still-falls-17393.herokuapp.com/"> This </a> is my personal fave - a basic social network! You can see the CS50 brief <a href="https://cs50.harvard.edu/web/2020/projects/4/network/">here</a> to see what code I was given to work with and github repository is <a href="https://github.com/emmadavids/network">here</a>.</div>
+<br>
+
+<div class="col1 proj"><h1>Commerce</h1>
+  <centre><a href="https://glacial-badlands-05273.herokuapp.com/"><img src="auctions.png" height=50% width=50%></a></centre><br><br><a href="https://glacial-badlands-05273.herokuapp.com/">This</a> is an Auction website a bit like eBay but obviously not as fancy! Click <a href="https://cs50.harvard.edu/web/2020/projects/2/commerce/">here</a> to see the project brief on CS50 website and you can see the code I started with and the link to my github repository is <a href="https://github.com/emmadavids/auctions">here</a>.
+  </div>
+  <br>
+    
+<div class="col1 proj">
+  <h1>Scrabble Cheat</h1>
+ <a href="https://emmasscrabblecheat.herokuapp.com/"> <img src="cat.png" height=50% width=50%></a>
+    <br><br><a href="https://emmasscrabblecheat.herokuapp.com/">  Something to help you cheat at scrabble. </a>Not particularly exciting or original but it was my first functional "application" that I coded from scratch (opposed to say following a walkthrough to build a pairs game or calculator for example). Dictionary from <a href="http://www.mieliestronk.com/wordlist.html">Mielestronk</a>.<a href="https://github.com/emmadavids/scrabblecheat"> Github link here.</a>   </div>
+  <br><br><br>
+</div>  </div>
+<footer class="main-footer">emma davids made this website</footer></div>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+    </script>
+</body>
+</html>
